@@ -113,10 +113,10 @@ function finalResult(playerCount, computerCount, replay){
     return new Promise(resolve => {
      
     if (playerCount>computerCount) {
-        writeInContent('.finalResult p',"YOU'VE WON THE GAME, Zhar brk ghir matfr7ch.")
+        writeInContent('.finalResult p',"YOU'VE WON THE GAME, Zhar brk don't get too happy.")
     }
     else if (playerCount < computerCount) {
-        writeInContent('.finalResult p',"You've lost the game LOSERRRRR PSK PAVILLON L AHAHAHAHA.");
+        writeInContent('.finalResult p',"You've lost the game :( .");
     } else {
         writeInContent('.finalResult p',"The game is a tie, khir m walo.");
     }
