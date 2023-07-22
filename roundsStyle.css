@@ -1,0 +1,104 @@
+.popup{
+    position: fixed;
+    align-self: center;
+    top: 25%;
+    border-radius: 5vw;;
+    display: flex;
+    flex-direction: column; 
+    padding: 2%;
+    scale:0;
+}
+
+
+.finalResult{
+    background:linear-gradient(to bottom right,rgb(32, 32, 73), rgb(41, 43, 111));
+font-size: 1.7vw;
+font-weight: lighter;
+color:rgb(206, 224, 241);
+margin: auto 20%;
+align-items: center;
+justify-content: center;
+text-align: center;
+border: 0.5px solid aliceblue;
+}
+
+.finalResult p{
+    font-size:2.1vw;
+    font-weight: 600;
+    margin: 6% auto;
+    color:aliceblue;
+    padding:auto;
+}
+
+
+.yesNo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 14%;
+}
+
+.replay, .stop{
+    font-size: 2.5vw;
+    border-radius: 1.5vw;
+    padding: 15% ;
+background: #c7c3f5;
+font-weight: 600;
+}
+
+h2{
+    margin: auto;
+    font-weight: 500;
+}
+
+.rounds{
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(to bottom, rgb(178, 217, 254),rgb(112, 127, 226));
+    border: 1px solid rgb(20, 0, 67);
+}
+
+.rounds p{
+    font-size: 30px;
+    color:aliceblue
+}
+
+.rounds button{
+    flex:1;    
+}
+
+.container{
+    gap: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:4%;
+padding: 2% 5%;
+border-radius: 20%;
+background: #040035;
+}
+
+.upDownBtns{
+display: flex;
+flex-direction: column;
+}
+
+.up ,.down{
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: #05003f;
+    background:rgb(209, 226, 242);
+margin:5%;
+}
+
+.done{
+    font-size: 30px;
+    color: #05003f;
+    background:rgb(223, 121, 157);
+    font-weight: bolder;
+    border-radius: 10px;
+}
