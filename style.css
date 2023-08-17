@@ -1,149 +1,187 @@
- @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap");
 
-
-*{
-    font-family: 'Signika', sans-serif;
+* {
+  font-family: "Signika", sans-serif;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgb(25, 14, 68), rgb(58, 67, 164));
+}
+
+.endRectangle {
+  position: fixed;
+  display: flex;
+  top: 0%;
+  height: 0%;
+  width: 100%;
+  background: rgb(16, 12, 43);
+  z-index: 3;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #aeaab9;
+  font-size: 3vw;
+  scale: 0;
+}
+
+.gameOver{
+    opacity:0%;
+}
+
+.bigTitle {
+  top: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  color: #dddbe3;
+  font-size: 6.5vw;
+}
+
+.secondTitle {
+  text-align: center;
+  margin: auto;
+  color: #aeaab9;
+  font-weight: 400;
+  font-size: 2.8vw;
+}
+
+.boxesContainer {
+  display: flex;
+  margin: 3% 13%;
+  gap: 3%;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  align-items: center;
+  border-radius: 5vw;
+  border: 0.5px solid rgb(32, 0, 120);
+  background: linear-gradient(
+    to bottom,
+    rgb(162, 195, 227),
+    rgb(111, 126, 223)
+  );
+  overflow: hidden;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 20%;
+  text-align: center;
+  font-size: 2vw;
+  color: rgb(183, 197, 210);
+}
+
+.playerChoice {
+  flex: 1;
+}
+
+.computerChoice {
+  flex: 1;
+}
+
+.picContainer {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writing {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  color: rgb(45, 34, 90);
+  margin-bottom: 5%;
+}
+
+p {
+  margin: 0;
+}
+
+.choice {
+  font-size: 5.5vw;
+}
+
+.score {
+  background: linear-gradient(
+    to bottom right,
+    rgb(162, 195, 227),
+    rgb(111, 126, 223)
+  );
+  padding: 0.8%;
+  border-radius: 1.1vw;
+  margin: 1% auto;
+  margin-top: 2%;
+  font-size: 2.5vw;
+}
+
+.result {
+  margin: auto;
+  color: #dddbe3;
+  font-size: 2.3vw;
+}
+
+.icon{
+    font-size: 7vw;
+}
+@media screen and (max-width: 500px) {
+  .boxesContainer {
+    display: flex;
+    margin: 3% 13%;
+    padding: 2%;
+    flex-direction: column;
+  }
+
+  .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin: 3%;
+    align-items: center;
+    border-radius: 40px;
+    border: 0.5px solid rgb(32, 0, 120);
+    background: linear-gradient(
+      to bottom,
+      rgb(162, 195, 227),
+      rgb(111, 126, 223)
+    );
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.boxesContainer{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    z-index: 0;
-    background: linear-gradient(to bottom, rgb(25, 14, 68), rgb(58, 67, 164));
-}
-
-.endRectangle{
-    position: fixed;
-    display: flex;
-    TOP:0%;
-    height: 0%;
-    width: 100%;
-    background:  rgb(16,12,43);
-    z-index: 3;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #aeaab9;
-    font-size: 3vw;
-    scale:0;
-}
-
-
-.bigTitle{
-    top: auto;
-    text-align: center;
-    margin:auto;
-    margin-top: 3% ;
-    color: #dddbe3;
-    font-size: 6.5vw;
-}
-
-.secondTitle{
-text-align: center;
-margin:auto;
-color: #aeaab9;
-font-weight: 400;
-font-size: 2.8vw;
-}
-
-
-.boxesContainer{
-display: flex;
-margin: 3% 13%;
-gap: 3%;
+    gap:5%;
+    margin:auto 18%;
 }
 
 .box{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    gap:2%;
-    align-items: center;
-    border-radius: 20%;
-    border: 0.5px solid rgb(32, 0, 120);
-    background: linear-gradient(to bottom, rgb(162, 195, 227),rgb(111, 126, 223));
-overflow: hidden;
+    margin:4%;
+padding:4%;
 }
 
-
-
-.picContainer{
-    flex:40%;
-display: flex;
-align-items: center;
-justify-content: center;
+.icon{
+    margin:1%;
+    font-size: 12vw;
 }
 
 .writing{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5vw;
-    color:rgb(45, 34, 90);
-    margin-bottom: 5%;
+    font-size: 4vw;
 }
-
-
-
-p{
-    margin: 0;
-}
-
-.svg{
-flex:1;
-    height:10%;
-    width:40%;
-}
-
-.scissorsIcon{
-    padding:6%;
-}
-
-.score{
-    background: linear-gradient(to bottom right, rgb(162, 195, 227),rgb(111, 126, 223));
-    padding:0.8%;
-    border-radius: 1.1vw;
-    margin:1% auto;
-    margin-top: 2%;
-    font-size: 2.5vw;
-}
-
-.result{
-    margin:auto;
-    color:#dddbe3;
-    font-size: 2.3vw;;
-}
-
-
-
-@media screen and (max-width: 500px) {
-
-    .boxesContainer{
-        display: flex;
-        margin: 3% 13%;
-        padding: 2%;
-        flex-direction:column;
-        }
-
-    .svg{
-         height:5vw;
-         }
-
-     .box{
-            flex:1;
-            display: flex;
-            flex-direction: column;
-            gap:2%;
-            margin: 3%;
-            align-items: center;
-            border-radius: 40px;
-            border: 0.5px solid rgb(32, 0, 120);
-            background: linear-gradient(to bottom, rgb(162, 195, 227),rgb(111, 126, 223));
-        }
-             
-    
-            
 }
