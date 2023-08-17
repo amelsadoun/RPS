@@ -29,8 +29,8 @@ body {
   scale: 0;
 }
 
-.gameOver{
-    opacity:0%;
+.gameOver {
+  opacity: 0%;
 }
 
 .bigTitle {
@@ -135,10 +135,14 @@ p {
   font-size: 2.3vw;
 }
 
-.icon{
-    font-size: 7vw;
+.icon {
+  font-size: 7vw;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
+
+*{
+  border:1px solid red
+}
   .boxesContainer {
     display: flex;
     margin: 3% 13%;
@@ -146,6 +150,25 @@ p {
     flex-direction: column;
   }
 
+  .bigTitle{
+    font-size: 11vw;
+  }
+
+  .score{
+    font-size: 7vw;
+  }
+
+  .secondTitle{
+    font-size:6vw;
+  }
+
+  .choices{
+    font-size: 6vw;
+  }
+
+  .choice{
+    font-size: 11vw;;
+  }
   .box {
     flex: 1;
     display: flex;
@@ -161,27 +184,26 @@ p {
       rgb(111, 126, 223)
     );
   }
-}
 
-@media only screen and (max-width: 600px) {
-.boxesContainer{
-    display:flex;
+  .boxesContainer {
+    display: flex;
     flex-direction: column;
-    gap:5%;
-    margin:auto 18%;
-}
+width:70%;
+    gap: 5%;
+    margin: auto
+  }
 
-.box{
-    margin:4%;
-padding:4%;
-}
+  .box {
+    margin: 4%;
+    padding: 4%;
+  }
 
-.icon{
-    margin:1%;
-    font-size: 12vw;
-}
+  .icon {
+    
+    font-size: 17vw;
+  }
 
-.writing{
+  .writing {
     font-size: 4vw;
-}
+  }
 }
